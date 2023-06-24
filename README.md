@@ -117,4 +117,23 @@ weighted avg       0.49      0.55      0.43      4095
 ![Actual vs Strategy Returns - Increased SMA Windows 4 & 80](/Images/Actual_vs_Strategy_Returns_Increased_SMA_Windows_4_80.png "Actual vs Strategy Returns - Increased SMA Windows 4 & 80")
 
 # Section 3: Evaluate a New Machine Learning Classifier
+**Machine Learning Classifier:** Logistic Regression
 
+**Parameters:**
+training data offset: 3 months
+short window: 4
+long window: 80
+
+                precision    recall  f1-score   support
+
+        -1.0       0.43      0.28      0.34      1806
+         1.0       0.55      0.71      0.62      2289
+
+    accuracy                           0.52      4095
+   macro avg       0.49      0.49      0.48      4095
+weighted avg       0.50      0.52      0.50      4095
+
+![Actual vs Strategy Returns - Logistic Regressions](/Images/Actual_vs_Strategy_Returns_Logistic_Regressions.png "Actual vs Strategy Returns - Logistic Regressions")
+
+**Did this new model perform better or worse than the provided baseline model?** This model perfromed worse than the baseline model.
+**Did this new model perform better or worse than your tuned trading algorithm?** This model also perfromed worse than the tuned trading algorithm model. This shows the selected SVC clacifier from SVM was best suited to this data.
